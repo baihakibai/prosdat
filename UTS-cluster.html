@@ -1,0 +1,1959 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; Prosaindata</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UTS-cluster';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Twitter.html">Crawling twitter</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/baihakibai/prosdat/blob/gh-pages/_sources/UTS-cluster.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/baihakibai/prosdat" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/baihakibai/prosdat/issues/new?title=Issue%20on%20page%20%2FUTS-cluster.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UTS-cluster.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">swifter</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;dataset-baru.csv&quot;</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Abstrak&quot;</span><span class="p">]</span>
+<span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">ModuleNotFoundError</span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-1-de13bc3ddee4&gt;</span> in <span class="ni">&lt;cell line: 6&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">re</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">swifter</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;dataset-baru.csv&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">text</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Abstrak&quot;</span><span class="p">]</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;swifter&#39;
+
+<span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NOTE</span>: If your import is failing due to a missing package, you can
+<span class="n">manually</span> <span class="n">install</span> <span class="n">dependencies</span> <span class="n">using</span> <span class="n">either</span> <span class="o">!</span>pip<span class="w"> </span>or<span class="w"> </span>!apt.
+
+<span class="n">To</span> <span class="n">view</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">installing</span> <span class="n">some</span> <span class="n">common</span> <span class="n">dependencies</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span>
+<span class="s2">&quot;Open Examples&quot;</span> <span class="n">button</span> <span class="n">below</span><span class="o">.</span>
+<span class="gt">---------------------------------------------------------------------------</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">case_folding</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">comment</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">case_folding</span><span class="p">)</span>
+<span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      sistem  informasi  akademik  (siakad) merupaka...
+1      berjalannya koneksi jaringan komputer dengan l...
+2      web server adalah sebuah perangkat lunak serve...
+3      penjadwalan  kuliah  di  perguruan  tinggi  me...
+4      seiring perkembangan teknologi yang ada diduni...
+                             ...                        
+800    investasi saham selama ini memiliki resiko ker...
+801    information retrieval (ir) merupakan pengambil...
+802    klasifikasi citra merupakan proses pengelompok...
+803    identifikasi atribut pejalan kaki merupakan sa...
+804    topik deteksi objek telah menarik perhatian ya...
+Name: Abstrak, Length: 805, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">linkNormalize</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\s—\s&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;http\S+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">text</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">linkNormalize</span><span class="p">)</span>
+<span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      sistem  informasi  akademik  (siakad) merupaka...
+1      berjalannya koneksi jaringan komputer dengan l...
+2      web server adalah sebuah perangkat lunak serve...
+3      penjadwalan  kuliah  di  perguruan  tinggi  me...
+4      seiring perkembangan teknologi yang ada diduni...
+                             ...                        
+800    investasi saham selama ini memiliki resiko ker...
+801    information retrieval (ir) merupakan pengambil...
+802    klasifikasi citra merupakan proses pengelompok...
+803    identifikasi atribut pejalan kaki merupakan sa...
+804    topik deteksi objek telah menarik perhatian ya...
+Name: Abstrak, Length: 805, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">symbols</span> <span class="o">=</span> <span class="s2">&quot;,!</span><span class="se">\&quot;</span><span class="s2">#$%&amp;()*+-.…/:;&lt;=&gt;?@[\]^_`{|}~</span><span class="se">\n</span><span class="s2">0987654321&quot;</span>
+<span class="k">def</span> <span class="nf">cleaning_text</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">symbols</span><span class="p">:</span>
+        <span class="n">comment</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">char</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">comment</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">comment</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">cleaning_text</span><span class="p">)</span>
+<span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      sistem  informasi  akademik   siakad  merupaka...
+1      berjalannya koneksi jaringan komputer dengan l...
+2      web server adalah sebuah perangkat lunak serve...
+3      penjadwalan  kuliah  di  perguruan  tinggi  me...
+4      seiring perkembangan teknologi yang ada diduni...
+                             ...                        
+800    investasi saham selama ini memiliki resiko ker...
+801    information retrieval  ir  merupakan pengambil...
+802    klasifikasi citra merupakan proses pengelompok...
+803    identifikasi atribut pejalan kaki merupakan sa...
+804    topik deteksi objek telah menarik perhatian ya...
+Name: Abstrak, Length: 805, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+<span class="n">list_stopwords</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">stopword_removal</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">comment</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">list_stopwords</span><span class="p">]</span>
+    <span class="n">kalimat</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+      <span class="n">kalimat</span> <span class="o">+=</span> <span class="n">i</span>
+      <span class="n">kalimat</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
+    <span class="k">return</span> <span class="n">kalimat</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\THORIQ\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Sastrawi.Stemmer.StemmerFactory</span> <span class="kn">import</span> <span class="n">StemmerFactory</span>
+
+<span class="n">factory</span> <span class="o">=</span> <span class="n">StemmerFactory</span><span class="p">()</span>
+<span class="n">stemmer</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stemmer</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">stemmingNormalize</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">comment</span><span class="p">:</span>
+        <span class="n">term</span> <span class="o">=</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
+    <span class="n">kalimat</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+      <span class="n">kalimat</span> <span class="o">+=</span> <span class="n">i</span>
+      <span class="n">kalimat</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
+    <span class="k">return</span> <span class="n">kalimat</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">swifter</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stemmingNormalize</span><span class="p">)</span>
+<span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "1be248d9a3864291aacbe2656756d761", "version_major": 2, "version_minor": 0}</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      sistem informasi akademik siakad rupa sistem i...
+1      jalan koneksi jaring komputer dengan lancar da...
+2      web server adalah buah perangkat lunak server ...
+3      jadwal kuliah di guru tinggi rupa masalah yang...
+4      iring kembang teknologi yang ada dunia muncul ...
+                             ...                        
+800    investasi saham lama ini milik resiko rugi yan...
+801    information retrieval ir rupa ambil informasi ...
+802    klasifikasi citra rupa proses kelompok piksel ...
+803    identifikasi atribut pejal kaki rupa salah sat...
+804    topik deteksi objek telah tarik perhati yang b...
+Name: Abstrak, Length: 805, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+<span class="n">tfidf_separate</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="n">df_tfidf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">tfidf_separate</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">(),</span> <span class="n">index</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span>
+<span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_tfidf</span><span class="o">.</span><span class="n">values</span>
+<span class="n">df_tfidf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>aalysis</th>
+      <th>aam</th>
+      <th>abad</th>
+      <th>abadi</th>
+      <th>abai</th>
+      <th>abdi</th>
+      <th>ability</th>
+      <th>abjad</th>
+      <th>absah</th>
+      <th>absensi</th>
+      <th>...</th>
+      <th>zara</th>
+      <th>zat</th>
+      <th>zcz</th>
+      <th>zf</th>
+      <th>zona</th>
+      <th>zone</th>
+      <th>zoning</th>
+      <th>zoom</th>
+      <th>zucara</th>
+      <th>zungu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>800</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>802</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>803</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>804</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>805 rows × 6151 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span> <span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="c1"># X_test = pca.transform(X_test)</span>
+
+<span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.02069984, 0.01628373, 0.01330499, 0.01141524, 0.00918442,
+       0.00853463, 0.00796232, 0.00748987, 0.00728992, 0.0068521 ])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KMeans(n_clusters=2, random_state=42)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">center</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span>
+<span class="n">center</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 0.31184525,  0.08175944,  0.00830296,  0.05511599, -0.00720064,
+        -0.00666104,  0.01277789,  0.02219742, -0.00493274,  0.00885927],
+       [-0.04473916, -0.01172969, -0.00119119, -0.00790727,  0.00103305,
+         0.00095563, -0.00183319, -0.00318457,  0.00070768, -0.001271  ]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span>
+
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span>
+<span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;RPL&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;KOMPUTASI&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># df[&#39;Kategori&#39;].replace(&quot;RPL&quot;,1, inplace=True)</span>
+<span class="c1"># df[&#39;Kategori&#39;].replace(&quot;KOMPUTASI&quot;,0, inplace=True)</span>
+<span class="n">y_true</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Kategori&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Kategori&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;RPL&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;, &#39;KOMPUTASI&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from sklearn.metrics import accuracy_score</span>
+<span class="c1"># print (&quot;Accuracy : &quot;,</span>
+<span class="c1">#     accuracy_score(y_true, y_pred)*100)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># df = pd.read_csv(&quot;dataset-baru.csv&quot;)</span>
+<span class="c1"># df[&#39;Kategori&#39;].replace(&quot;RPL&quot;,0, inplace=True)</span>
+<span class="c1"># df[&#39;Kategori&#39;].replace(&quot;KOMPUTASI&quot;,1, inplace=True)</span>
+<span class="c1"># y_true = df[&#39;Kategori&#39;].values.tolist()</span>
+<span class="c1"># print(df[&#39;Kategori&#39;].values.tolist())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from sklearn.metrics import accuracy_score</span>
+<span class="c1"># print (&quot;Accuracy : &quot;,</span>
+<span class="c1">#     accuracy_score(y_true, y_pred)*100)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_true</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2"> : &quot;</span><span class="p">,</span><span class="n">y_true</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  RPL
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+RPL 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+KOMPUTASI 	 :  KOMPUTASI
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Accuracy : &quot;</span><span class="p">,</span>
+    <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy :  53.7888198757764
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Baihaki
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
